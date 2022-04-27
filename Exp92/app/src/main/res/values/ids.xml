@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sub" type="id" />
+    <item name="mul" type="id" />
+    <item name="div" type="id" />
+    <item name="addBtn" type="id" />
+    <item name="subBtn" type="id" />
+    <item name="mulBtn" type="id" />
+    <item name="divBtn" type="id" />
+</resources>

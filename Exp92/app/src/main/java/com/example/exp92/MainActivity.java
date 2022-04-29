@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         divBtn = findViewById(R.id.divBtn);
         ans = findViewById(R.id.ans);
 
+
     }
 
     public void subtraction(View view) {

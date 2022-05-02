@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <ToggleButton
         android:id="@+id/tgbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bluetooth"
+        android:onClick="btnClick"
         android:textOff="Bluetooth is off"
-        android:textOn="BLuetooth is on"
-        android:onClick="btnClick"/>
+        android:textOn="BLuetooth is on" />
 
     <TextView
         android:id="@+id/TV"
@@ -21,5 +20,6 @@
         android:layout_height="wrap_content"
         android:text=""
         />
+
 
 </LinearLayout>

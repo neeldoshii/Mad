@@ -2,18 +2,14 @@ package com.example.exp92;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.view.View;
+import android.os.*;
+import android.view.*;
 import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText fnum;
-    EditText snum;
-    Button addBtn;
-    Button subBtn;
-    Button mulBtn;
-    Button divBtn;
+    EditText fnum,snum;
+    Button addBtn, subBtn, mulBtn, divBtn;
     TextView ans;
 
 

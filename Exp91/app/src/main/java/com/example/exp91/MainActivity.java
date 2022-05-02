@@ -3,9 +3,8 @@ package com.example.exp91;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.ToggleButton;
+import android.view.*;
+import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
     TextView TV;

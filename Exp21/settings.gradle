@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "exp21"
+rootProject.name = "Exp 21"
 include ':app'

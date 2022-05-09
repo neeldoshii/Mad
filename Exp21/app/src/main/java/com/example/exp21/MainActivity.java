@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
     public class BatteryReceiver extends BroadcastReceiver {
         @Override
-    public void onReceive(Context context, Intent intent){
-        int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
-        mBatteryLevelText.setText("battery level "+level+"%");
-        mBatteryLevelProgress.setProgress(level);
-    }
+        public void onReceive(Context context, Intent intent){
+            int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
+            mBatteryLevelText.setText("battery level "+level+"%");
+            mBatteryLevelProgress.setProgress(level);
+        }
     }
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#051130"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:hint="Enter Recipient Email Address"
+        />
+    <EditText
+        android:id="@+id/txtSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Subject here"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/txtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:hint="Write your message here"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_margin="15dp"/>
+    <Button
+        android:id="@+id/btnsend"
+        android:onClick="btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:text="Send Email" />
+</LinearLayout>

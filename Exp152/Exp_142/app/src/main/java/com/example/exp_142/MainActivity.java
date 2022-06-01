@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     CheckBox checkBox,checkBox2,checkBox3,checkBox4;
     Button button;
-    int total=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,27 +27,29 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnclick(View view){
-        StringBuilder s = new StringBuilder();
-        s.append("Selected Items :- \n" );
+        int total=0;
+        String s = " ";
+//        s.append("Selected Items :- \n" );
 
         if(checkBox.isChecked()){
-            total=total+150;
-            s.append(checkBox.getText()+": 150 "+"\n");
+            total+= 150;
+            s+= "Pizza: 150 \n";
+//            s.append(checkBox.getText()+": 150 "+"\n");
         }
         if(checkBox2.isChecked()){
-            total=total+200;
+            s+= "Coffee: 200\n";
+            total+= 200;
 
-            s.append(checkBox2.getText()+": 200"+"\n");
+//            s.append(checkBox2.getText()+": 200"+"\n");
         }
         if(checkBox3.isChecked()){
-
-            total=total+500;
-            s.append(checkBox3.getText()+": 500"+"\n");
+            s+= "Burger: 500\n";
+            total += 500;
+//            s.append(checkBox3.getText()+": 500"+"\n");
 
         }
-        s.append(Integer.toString(total));
-        Toast toast=Toast.makeText(getApplicationContext(),s,Toast.LENGTH_LONG);
-        toast.show();
+//        s.append(Integer.toString(total));
+        Toast.makeText(getApplicationContext(),s + "\n Total: " + total,Toast.LENGTH_LONG).show();
 
 
 

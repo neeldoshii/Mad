@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button1"
-        android:foregroundGravity="center_vertical|center|fill_vertical"
-        android:max="100"
-        android:progress="0"
-        android:layout_centerHorizontal="true"
-
-        android:visibility="invisible"
-        />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="displaybar"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Display Circular bar " />
+        android:text="Display Circular bar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
 
 
-</RelativeLayout>
+</LinearLayout>

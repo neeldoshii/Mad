@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
         button1=findViewById(R.id.button1);
 
     }
-    public void displaybar(View view) {
+    public void displaybar(View view)
+    {
         progressBar.setVisibility(View.VISIBLE);
     }
 }

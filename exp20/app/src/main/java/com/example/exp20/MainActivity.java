@@ -20,55 +20,23 @@ public class MainActivity extends AppCompatActivity {
         b2 = findViewById(R.id.b2);
 
 
-
-
-
-
-
-        b1.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                WifiManager wifi = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        wifi.setWifiEnabled(true);
-
-                Toast t1=Toast.makeText(getApplicationContext(),"Wifi enabled",Toast.LENGTH_SHORT);
-                t1.show();
-            }
-        });
-
-        b2.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Toast.makeText(getApplicationContext(),"Wifi enabled",Toast.LENGTH_SHORT);
-
-            }
-        });
-
-
-
     }
 
 
 
-////
-////
-//////
-//    public void start(View view) {
-//        WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-//        wifi.setWifiEnabled(true);
-//        Toast b1=Toast.makeText(getApplicationContext(),"Wifi enabled",Toast.LENGTH_SHORT);
-//    }
-//////
-//    public void stop(View view) {
-//        WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-////        wifi.setWifiEnabled(false);
-//        Toast t1=Toast.makeText(getApplicationContext(),"Wifi dinabled",Toast.LENGTH_SHORT);
-//
-//
-//    }
+    public void start(View view) {
+        WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        wifi.setWifiEnabled(true);
+        Toast.makeText(getApplicationContext(),"Wifi enabled",Toast.LENGTH_SHORT).show();
+    }
+
+
+    public void stop(View view) {
+        WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        wifi.setWifiEnabled(false);
+        Toast.makeText(getApplicationContext(),"Wifi dinabled",Toast.LENGTH_SHORT).show();
+
+
+    }
 //
 }

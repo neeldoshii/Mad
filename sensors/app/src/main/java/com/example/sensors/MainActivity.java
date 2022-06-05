@@ -5,10 +5,13 @@ import android.graphics.*;
 import android.hardware.*;
 import android.os.Bundle;
 import android.view.View;
-public class MainActivity extends Activity implements SensorEventListener{
-    private SensorManager sensorManager;
-    private boolean isColor = false;
-    private View view;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity implements SensorEventListener{
+    SensorManager sensorManager;
+    boolean isColor = false;
+    View view;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,4 +59,3 @@ public class MainActivity extends Activity implements SensorEventListener{
         sensorManager.unregisterListener(this);
     }
 }
-
